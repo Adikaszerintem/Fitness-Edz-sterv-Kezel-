@@ -49,4 +49,4 @@ console.assert(rossz.getNev() === undefined, "Hiba a konstruktorban, Ervenytelen
 console.assert(rossz.getEmail() === undefined, "Hiba a konstruktorban, Ervenytelen emailt is elmenti")
 console.assert(rossz.getJelszo() === undefined, "Hiba a konstruktorban, Ervenytelen jelszot is elmenti")
 
-// a jelszoEllenorzo() nem fogad el semmit 8 alatt, es a getEmail() fuggvenyben benne hagytad a parametert
+// Nem latok hibat csak a getEmail() fuggvenyben benne hagytad a parametert
