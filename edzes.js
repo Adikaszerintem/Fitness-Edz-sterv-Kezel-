@@ -16,7 +16,7 @@ class Edzes {
     }
 
     setNev(nev) {
-        if (this.getNev().length < 5) {
+        if (nev.length < 5) {
             this.#nev = "Ismeretlen gyakorlat"
         } else {
             this.#nev = nev
@@ -32,15 +32,28 @@ class Edzes {
     }
 
     setSorozatok(sorozatok) {
-        this.#sorozatok = sorozatok
+        if (sorozatok >= 0) {
+            this.#sorozatok = sorozatok
+        }
+        else{
+            this.#sorozatok = 0
+        }
     }
 
     setIsmetlesek(ismetlesek) {
-        this.#ismetlesek = ismetlesek
+        if (ismetlesek >= 0) {
+            this.#ismetlesek = ismetlesek
+        } else{
+            this.#ismetlesek = 0
+        }
     }
 
     setPihenesiIdo(pihenesiIdo) {
-        this.#pihenesiIdo = pihenesiIdo
+        if (pihenesiIdo >= 0) {
+            this.#pihenesiIdo = pihenesiIdo
+        } else{
+            this.#pihenesiIdo = 0
+        }
     }
 
     getNev() {
